@@ -17,4 +17,5 @@ samples, guidance on mobile development, and a full API reference.
 
 [youtube] (https://www.youtube.com/watch?v=WWacJeLg5Og&list=PLzcRC7PA0xWQ-7Ig3C2pcdJxmgwXNwTI2&index=3)
 [figma] (https://www.figma.com/design/Tj8SObBDIn9L986msL2xh6/Meditation-app-UI--Community-?node-id=1-3661&t=agCshDKotEatpw9b-0)
+
 # meditation-flutter-ui-kit
