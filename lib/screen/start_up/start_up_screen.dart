@@ -1,6 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:meditation/common_widget/button/round_button.dart';
 import 'package:meditation/config/my_color.dart';
+import 'package:meditation/screen/login/login_screen.dart';
 
 class StartUp extends StatefulWidget {
   const StartUp({super.key});
@@ -13,46 +15,48 @@ class _StartUpState extends State<StartUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: EdgeInsetsGeometry.symmetric(vertical: 50),
+      backgroundColor: Colors.white,
+      body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Center(
-              child: Column(
-                children: [
-                  Image.asset('assets/img/start_logo.png'),
-                  SizedBox(height: 80),
-                  Image.asset('assets/img/start_relax.png'),
-                ],
-              ),
+            Column(
+              children: [
+                Image.asset(
+                  'assets/img/starup_top.png',
+                  width: double.infinity,
+                ),
+              ],
             ),
-            const Spacer(),
+            SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 60),
               child: Column(
                 children: [
                   Text(
                     "We are what we do",
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 30,
                       color: MyColor.primaryText,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: 15),
+                  SizedBox(height: 20),
                   Text(
                     'Thousand of people are using silent moon for smalls meditation',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 16,
                       color: MyColor.secondaryText,
+                      fontWeight: FontWeight.w400,
+                      height: 1.5,
                     ),
                   ),
                 ],
               ),
             ),
-            const Spacer(),
+            SizedBox(height: 80),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: RoundButton(title: 'SIGN UP', onPressed: () {}),
@@ -66,7 +70,12 @@ class _StartUpState extends State<StartUp> {
                   style: TextStyle(fontSize: 14, color: MyColor.secondaryText),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      CupertinoPageRoute(builder: (context) => LoginScreen()),
+                    );
+                  },
                   // padding: EdgeInsetsGeometry.only(left: 10),
                   child: Text(
                     'LOG IN',
@@ -75,6 +84,7 @@ class _StartUpState extends State<StartUp> {
                 ),
               ],
             ),
+            SizedBox(height: 20),
           ],
         ),
       ),

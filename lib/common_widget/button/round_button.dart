@@ -20,13 +20,13 @@ class RoundButton extends StatelessWidget {
     return MaterialButton(
       onPressed: onPressed,
       minWidth: double.maxFinite,
+      padding: EdgeInsets.symmetric(vertical: 20),
       color: btnType == RoundButtonType.primary
           ? MyColor.primary
           : MyColor.tertiary,
-      height: 60,
       shape: RoundedRectangleBorder(
         side: BorderSide.none,
-        borderRadius: BorderRadius.circular(30),
+        borderRadius: BorderRadius.circular(38),
       ),
       child: Text(
         title,

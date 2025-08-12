@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:meditation/screen/home/chose_topic.dart';
+import 'package:meditation/screen/home/reminder_screen.dart';
+import 'package:meditation/screen/login/login_screen.dart';
 import 'package:meditation/screen/start_up/start_up_screen.dart';
+import 'package:meditation/screen/welcome/welcome_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +38,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: false,
       ),
       debugShowCheckedModeBanner: false,
-      home: const StartUp(),
+      home: const WelcomeScreen(),
     );
   }
 }
