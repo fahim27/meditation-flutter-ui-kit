@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meditation/common_widget/tab_button.dart';
 import 'package:meditation/config/my_color.dart';
 import 'package:meditation/screen/home/home_screen.dart';
+import 'package:meditation/screen/meditate/meditate_screen.dart';
 
 class MainTabScreen extends StatefulWidget {
   const MainTabScreen({Key? key}) : super(key: key);
@@ -27,7 +28,7 @@ class _MainTabScreenState extends State<MainTabScreen>
         children: [
           HomeScreen(),
           Container(width: 200, height: 200, color: Colors.yellow),
-          Container(width: 200, height: 200, color: Colors.green),
+          MeditateScreen(),
           Container(width: 200, height: 200, color: Colors.red),
           Container(width: 200, height: 200, color: Colors.blue),
         ],

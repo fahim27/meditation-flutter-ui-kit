@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meditation/config/my_color.dart';
+import 'package:meditation/screen/home/course_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -118,7 +119,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                     style: TextStyle(color: Color(0xffEBEAEC)),
                                   ),
                                   ElevatedButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      context.push(CourseScreen());
+                                    },
                                     style: ElevatedButton.styleFrom(
                                       backgroundColor: Colors.white,
                                       foregroundColor: Colors.black,
@@ -190,7 +193,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                     style: TextStyle(color: Color(0xff524F53)),
                                   ),
                                   ElevatedButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      context.push(CourseScreen());
+                                    },
                                     style: ElevatedButton.styleFrom(
                                       backgroundColor: Color(0xff3F414E),
                                       foregroundColor: Colors.white,
@@ -206,6 +211,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   ),
                                 ],
                               ),
+                              
                             ],
                           ),
                         ),
