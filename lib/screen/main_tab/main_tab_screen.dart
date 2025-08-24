@@ -3,6 +3,7 @@ import 'package:meditation/common_widget/tab_button.dart';
 import 'package:meditation/config/my_color.dart';
 import 'package:meditation/screen/home/home_screen.dart';
 import 'package:meditation/screen/meditate/meditate_screen.dart';
+import 'package:meditation/screen/music/music_screen.dart';
 
 class MainTabScreen extends StatefulWidget {
   const MainTabScreen({Key? key}) : super(key: key);
@@ -15,6 +16,8 @@ class _MainTabScreenState extends State<MainTabScreen>
     with SingleTickerProviderStateMixin {
   TabController? controller;
   int selectTab = 0;
+
+  
   @override
   void initState() {
     super.initState();
@@ -29,7 +32,7 @@ class _MainTabScreenState extends State<MainTabScreen>
           HomeScreen(),
           Container(width: 200, height: 200, color: Colors.yellow),
           MeditateScreen(),
-          Container(width: 200, height: 200, color: Colors.red),
+          MusicScreen(),
           Container(width: 200, height: 200, color: Colors.blue),
         ],
       ),

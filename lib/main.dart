@@ -5,6 +5,7 @@ import 'package:meditation/screen/home/reminder_screen.dart';
 import 'package:meditation/screen/login/login_screen.dart';
 import 'package:meditation/screen/main_tab/main_tab_screen.dart';
 import 'package:meditation/screen/meditate/meditate_screen.dart';
+import 'package:meditation/screen/music/music_screen.dart';
 import 'package:meditation/screen/start_up/start_up_screen.dart';
 import 'package:meditation/screen/welcome/welcome_screen.dart';
 
@@ -41,8 +42,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: false,
       ),
       debugShowCheckedModeBanner: false,
-      // home: const WelcomeScreen(),
-      home: const MainTabScreen(),
+      home: const WelcomeScreen(),
     );
   }
 }
